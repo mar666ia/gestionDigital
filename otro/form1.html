@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estudiantes.css">
+  <title>Sistema de Tickets | Estudiantes</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-logo">
+      <div class="logo">
+        <a href="menu.html"><img src="imagenes/uttn_logo.jpg" alt="Logo"></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="title-container">
+    <a class="icon" href="menu.html">
+      <img src="imagenes/back.png" alt="" />
+      <!-- Coloca aquí tu código o etiqueta para el icono -->
+    </a>
+    <h1>Sistema de Tickets para Estudiantes</h1>
+    <div></div>
+  </div>
+  </div>
+  <div class="container">
+    <form name="formulario1" action="" id="form">
+      <input type="text" value="guardar" name="tipo_operacion" hidden="true">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title"></span>
+          <div class="fields">
+            <div class="input-field">
+              <label for="">Nombre Completo <span style="color: red;">*</span></label>
+              <input size="40" type="text" placeholder="Nombre Completo" name="nombre" required>
+            </div>
+            <div class="input-field">
+              <label for="">Matrícula <span style="color: red;">*</span></label>
+              <input size="10" maxlength="10" type="text" placeholder="Matrícula" name="matricula" required>
+            </div>
+            <div class="input-field">
+              <label for="">Carrera <span style="color: red;">*</span></label>
+              <select name="carrera" id="carrera">
+              </select>
+            </div>
+          </div> <br>
+          <div class="fields">
+            <div class="input-field">
+              <label for="">Descripción del ticket<span style="color: red;">*</span></label>
+              <textarea required name="descripcion" id="" cols="80" rows="10"></textarea>
+            </div>
+            <div class="input-field">
+              <label for="">Área <span style="color: red;">*</span></label>
+              <select name="area" id="area">
+                <option selected disabled value="-">Selecciona una opción</option>
+              </select>
+            </div>
+          </div>
+          <div class="fields">
+            <div class="input-field"> <br>
+              <div>
+                <label id="documentos" for="">Documentos/Capturas:</label>
+                <input type="file" name="documentos">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <br>
+      <div class="field-boton">
+        <button class="boton btnText" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript">
+    let $carrera = document.getElementById('carrera')
+    let $area = document.getElementById('area')
+
+    let carreras = ['Administración', 'Mantenimiento Industrial', 'Mecatrónica', 'Energías Renovables', 'Procesos y Operaciones Industriales', 'Tecnologías de la Información']
+    let areas = ['Área Formulación y Evaluación de Proyectos', 'Área Capital Humano', 'Área Industrial', 'Área Petróleo',
+      'Área Automatización', 'Área Sistemas de Manufactura Flexible', 'Área Instalaciones Eléctricas Eficientes', 'Área Calidad y Ahorro de Energía',
+      'Área Manufactura', 'Área Plásticos', 'Área Desarrollo de Software Multiplataforma', 'Área Entornos Virtuales y Negocios Digitales']
+
+    function mostrar(arreglo, lugar) {
+      let elementos = '<option selected disabled>Selecciona una opción</option>'
+      for (let i = 0; i < arreglo.length; i++) {
+        elementos += '<option value="' + arreglo[i] + '">' + arreglo[i] + '</option>'
+      }
+      lugar.innerHTML = elementos
+    }
+    mostrar(carreras, $carrera)
+
+    $carrera.addEventListener('change', function () {
+      let valor = $carrera.value
+
+      switch (valor) {
+        case 'Administración':
+          let recortar = areas.slice(0, 2)
+          mostrar(recortar, $area)
+          break
+        case 'Mantenimiento Industrial':
+          let recortar2 = areas.slice(2, 4)
+          mostrar(recortar2, $area)
+          break;
+        case 'Mecatrónica':
+          let recortar3 = areas.slice(4, 7) 
+          mostrar(recortar3, $area)
+          break;
+
+        case 'Energías Renovables':
+        let recortar4 = areas.slice(7, 8) 
+          mostrar(recortar4, $area)
+          break;
+
+        case 'Procesos y Operaciones Industriales':
+        let recortar5 = areas.slice(8, 10) 
+          mostrar(recortar5, $area)
+          break;
+
+        case 'Tecnologías de la Información':
+        let recortar6 = areas.slice(10, 12) 
+          mostrar(recortar6, $area)
+          break;
+
+        default:
+          break;
+      }
+
+    })
+  </script>
+  <script src="js/funciones.js"></script>
+</body>
+
+</html>

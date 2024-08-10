@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estudiantes.css">
+    <title>Sistema de Tickets | Docentes</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-logo">
+            <div class="logo">
+                <a href="menu.html"><img src="imagenes/uttn_logo.jpg" alt="Logo"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="title-container">
+        <a class="icon" href="menu.html">
+            <img src="imagenes/back.png" alt="" />
+            <!-- Coloca aquí tu código o etiqueta para el icono -->
+        </a>
+        <h1>Sistema de Tickets para Docentes</h1>
+        <div></div>
+    </div>
+    </div>
+    <div class="container">
+        <form name="formulario1" action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"></span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="">No. de Empleado <span style="color: red;">*</span></label>
+                            <input size="10" maxlength="10" type="text" placeholder="No. de Empleado" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="">Nombre Completo <span style="color: red;">*</span></label>
+                            <input size="40" type="text" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="">Carrera <span style="color: red;">*</span></label>
+                            <select name="" id="carrera">
+                                <option selected disabled value="-">Selecciona una opción</option>
+                                <option value="">Administración</option>
+                                <option value="">Mantenimiento Industrial</option>
+                                <option value="">Mecatrónica</option>
+                                <option value="">Energías Renovables</option>
+                                <option value="">Procesos y Operaciones Industriales</option>
+                                <option value="">Tecnologías de la Información</option>
+                            </select>
+                        </div>
+                    </div> <br>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="">Descripción del ticket <span style="color: red;">*</span></label>
+                            <textarea required name="descripcion" id="" cols="100" rows="10"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label id="documentos" for="">Documentos/Capturas:</label>
+                            <input type="file">
+                        </div>
+                    </div>
+
+                </div>
+            </div> <br> <br>
+            <div class="field-boton">
+                <button class="boton">
+                    <span class="btnText">Enviar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>

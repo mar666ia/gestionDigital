@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ticketenviado.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/ticketenviado.css" />
+    <title>Panel de Admin | Empleados</title>
+</head>
+
+<body>
+    <header class="bg-green-500 py-3" style="margin-bottom:40px;">
+        <div class="container mx-auto">
+            <div class="logo text-center bg-white p-2">
+                <a href="menu.html"><img src="../imagenes/uttn_logo.jpg" alt="Logo" class="w-48 h-h" /></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-full">
+        <div class="mx-auto">
+            <table class="py-4 w-full border-b-2 border-t-2">
+                <tr>
+                    <td class="w-1/6 border-r-2">
+                        <p class="text-center font-bold">Hola, admin</p>
+                    </td>
+                    <td class="w-2/3 border-r-2">
+                        <p class="text-center font-bold">Insumos y suministros</p>
+                    </td>
+                    <td class="text-center w-1/5 py-2">
+                        <button class=" p-2 rounded-full border-2 border-red-500 py-2 text-red-500 ">Cerrar
+                            Sesión</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <div class="bg-gray-100 flex flex-wrap">
+        <aside class="bg-gray-200 w-full md:w-1/6 h-screen">
+            <ul class="flex flex-col">
+                <li class="py-4 px-6 flex items-center">
+                    <img src="../imagenes/home.png" alt="Icono 1" class="w-4 h-4 mr-2">
+                    <a href="adminInicio.html" class="text-black-700">Inicio</a>
+                </li>
+                <li class="py-4 px-6 flex items-center">
+                    <img src="../imagenes/empleados.png" alt="Icono 2" class="w-4 h-4 mr-2">
+                    <a href="adminEmpleados.html" class="text-black-700">Empleados</a>
+                </li>
+                <li class="py-4 px-6 flex items-center">
+                    <img src="../imagenes/ticket.png" alt="Icono 3" class="w-4 h-4 mr-2">
+                    <a href="adminTickets.html" class="text-black-700">Tickets</a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="w-full md:w-4/5">
+            <div class="py-4 mx-auto ml-0">
+                <div class="justify-end flex flex-wrap -mx-4">
+                    <!-- Contenedores pequeños -->
+                    <div class=" rounded-lg p-1 border border-gray-100 shadow text-black-500 flex items-center mr-4">
+                        <img src="../imagenes/lupa.png" alt="Descripción de la imagen"
+                            class="w-6 h-6 rounded-full mr-4">
+                        <form class="flex">
+                            <input type="search" class="flex-1 mr-2 px-2 py-1 rounded bg-gray-100" placeholder="Buscar empleado...">
+                            <button type="submit" class="border border-black text-black px-4 py-2 rounded bg-gray-100">Buscar</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <!-- Contenedores superiores -->
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                  <div class="bg-white shadow rounded-lg p-4">
+                    <div class="flex justify-center">
+                        <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                    </div>
+                    <div class="text-center mt-2">
+                      <p class="py-px">Juan Lopez</p>
+                      <p class="py-px font-bold">Técnico</p>
+                      <p class="py-px text-gray-400">1111</p>
+                    </div>
+                    <div class="flex justify-center mt-2">
+                      <button class="bg-black text-white rounded-full w-24 h-8">
+                        Ver perfil
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div><div class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <div class="bg-white shadow rounded-lg p-4">
+                      <div class="flex justify-center">
+                          <img src="../imagenes/foto.png" alt="Foto" class="w-16 h-16 rounded-full">
+                      </div>
+                      <div class="text-center mt-2">
+                        <p>Juan Lopez</p>
+                        <p class="font-bold">Técnico</p>
+                        <p class="text-gray-400">1111</p>
+                      </div>
+                      <div class="flex justify-center mt-2">
+                        <button class="bg-black text-white rounded-full w-24 h-8">
+                          Ver perfil
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+
+
+</body>
+
+</html>

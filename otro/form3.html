@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estudiantes.css">
+    <title>Sistema de Tickets | Administrativos</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-logo">
+            <div class="logo">
+                <a href="menu.html"><img src="imagenes/uttn_logo.jpg" alt="Logo"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="title-container">
+        <a class="icon" href="menu.html">
+            <img src="imagenes/back.png" alt="" />
+            <!-- Coloca aquí tu código o etiqueta para el icono -->
+        </a>
+        <h1>Sistema de Tickets para Administrativos</h1>
+        <div></div>
+    </div>
+    </div>
+    <div class="container">
+        <form name="formulario1" action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"></span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="">No. de Empleado <span style="color: red;">*</span></label>
+                            <input size="10" maxlength="10" type="text" placeholder="No. de Empleado" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="">Nombre Completo <span style="color: red;">*</span></label>
+                            <input size="40" type="text" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="">Departamento <span style="color: red;">*</span></label>
+                            <select name="" id="departamento">
+                                <option selected disabled value="-">Selecciona una opción</option>
+                                <option value="">Tecnologías de la Información</option>
+                                <option value="">Procesos Industriales</option>
+                                <option value="">Departamento de Planeación y Evaluación</option>
+                                <option value="">Vinculación</option>
+                                <option value="">Administración</option>
+                                <option value="">Mecatrónica</option>
+                                <option value="">DIPROSET</option>
+                                <option value="">Extension Universitaria</option>
+                                <option value="">Administración y Finanzas</option>
+                                <option value="">Rectoría</option>
+                                <option value="">Energías Renovables</option>
+                                <option value="">Departamento de Personal</option>
+                                <option value="">Mantenimiento Industrial</option>
+                                <option value="">Departamento de Prácticas y Estadías</option>
+                                <option value="">Departamento calidad de Servicio de apoyo al Estudiante</option>
+                                <option value="">Departamento de Contabilidad</option>
+                                <option value="">Departamento de Sistemas</option>
+                                <option value="">Departamento de Prensa y Difusión</option>
+                                <option value="">Departamento de Servicios Escolares</option>
+                                <option value="">Departamento de Programación y Pre</option>
+                                <option value="">Departamento de Materiales y Servicios Generales</option>
+                                <option value="">Departamento de Mantenimiento e Instalación</option>
+                                <option value="">Departamento de Inclusión</option>
+                                <option value="">Departamento de Planeación	Calidad</option>
+                                <option value="">Departamento de Servicios Bibliotecarios</option>
+                                <option value="">Departamento de Servicios Estudiantiles</option>
+                                <option value="">Departamento de Investigación y Desarrollo</option>
+                                <option value="">Departamento de Cultura y Deporte</option>
+                            </select>
+                        </div>
+                    </div> <br>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="">Descripción del ticket <span style="color: red;">*</span></label>
+                            <textarea required name="descripcion" id="" cols="100" rows="10"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label id="documentos" for="">Documentos/Capturas:</label>
+                            <input type="file">
+                        </div>
+                    </div>
+
+                </div>
+            </div> <br> <br>
+            <div class="field-boton">
+                <button class="boton">
+                    <span class="btnText">Enviar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>

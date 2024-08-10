@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ticketenviado.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <header class="bg-green-500 py-3 mb-12">
+        <div class="container mx-auto">
+            <div class="logo text-center bg-white p-2">
+                <img src="imagenes/uttn_logo.jpg" alt="Logo" class="w-48 h-h">
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="container mx-auto mt-8 w-1/2"> <br> <br>
+            <div class="bg-white rounded-md shadow-2xl p-8 container mt-8 w-6/7">
+                <div class="py-5 px-10">
+                    <h2 class="text-2xl text-left font-bold mb-4">Iniciar sesión</h2>
+                    <div class="mb-4">
+                    <label for="usuario" class="text-sm font-medium">
+                        <p class="text-left font-bold">Usuario</p>
+                    </label><br>
+                    <div class="flex">
+                        <input 
+                            type="text" id="usuario"
+                            class="bg-gray-50 border text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Ingresa tu usuario"
+                        >
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="contraseña" class="text-sm font-medium">
+                        <p class="text-left font-bold">Contraseña</p>
+                    </label><br>
+                    <div class="flex">  
+                        <input 
+                            required type="password" id="contraseña"
+                            class="bg-gray-50 border text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingresa tu contraseña"
+                        >
+                    </div>
+                </div>
+                <div class="flex justify-end items-center">
+                    <button
+                    class="bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 mr-2 mb-2 text-white">Iniciar Sesión</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="py-4">Ⓒ Universidad Tecnológica de Tamaulipas Norte - 2024</p>
+    </footer>
+</body>
+</html>
